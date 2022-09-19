@@ -13,8 +13,8 @@ COPY . /app
 # Update pip
 RUN pip install --upgrade pip
 
-# Install dependencies
-RUN pip install --no-cache-dir --upgrade -r requirements.txt
+# Install dependencies from "requirements.txt"
+RUN pip install -r requirements.txt
 
 # Run the app
 # Set host to 0.0.0.0 to make it run on the container network
